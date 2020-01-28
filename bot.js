@@ -13,8 +13,7 @@ client.on("message", message => {
 });
 
 client.on("messageDelete", message => {
-  const ayy = client.emojis.find(emoji => emoji.name === "eyes");
-  message.reply(ayy);
+  message.reply("I saw that");
 });
 
 // Get Bot Token+
