@@ -12,6 +12,10 @@ client.on("message", message => {
   }
 });
 
-// THIS  MUST  BE  THIS  WAY
+client.on("messageDelete", message => {
+  const ayy = client.emojis.find(emoji => emoji.name === "eyes");
+  message.reply(ayy);
+});
 
-client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
+// Get Bot Token+
+client.login(process.env.BOT_TOKEN);
