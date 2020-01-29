@@ -13,8 +13,7 @@ client.on("message", message => {
 });
 
 client.on("messageDelete", message => {
-  
-  message.reply('👀');
+  message.reply("👀");
 });
 
 // Get Bot Token+
